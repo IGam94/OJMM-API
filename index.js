@@ -24,6 +24,10 @@ firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
 const storage = firebase.storage();
 
+app.get("/", (req, res) => {
+  res.send("hello world");
+});
+
 app.post("/api/image/upload", (req, res) => {
   const storageRef = storage.ref();
   const image = req.files.file;
