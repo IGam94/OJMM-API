@@ -56,5 +56,3 @@ app.post("/api/food/add", (req, res) => {
       res.send("성공");
     });
 });
-
-app.listen(80, () => console.log("Listening on: http://localhost:4000/"));
