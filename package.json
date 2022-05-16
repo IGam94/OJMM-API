@@ -17,7 +17,7 @@
   "devDependencies": {},
   "scripts": {
     "start": "node index.js",
-    "heroku-postbuild": "npx webpack",
+    "heroku-postbuild": "npx -g webpack webpack-cli",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
