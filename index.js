@@ -60,3 +60,5 @@ app.post("/api/food/add", (req, res) => {
       res.send("성공");
     });
 });
+
+app.listen(process.env.PORT || 3000);
