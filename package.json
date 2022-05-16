@@ -5,8 +5,8 @@
   "main": "index.js",
   "type": "module",
   "engines": {
-    "node": "12.11.1"
-    },
+    "node": "16.x.x"
+  },
   "dependencies": {
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
