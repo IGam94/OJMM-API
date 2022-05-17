@@ -61,4 +61,18 @@ app.post("/api/food/add", (req, res) => {
     });
 });
 
+app.post("/api/food/add", (req, res) => {
+  console.log(req.body);
+  const food = {};
+
+  db.collection("test")
+    .doc("food")
+    .update({
+      food: firebase.firestore.FieldValue.arrayUnion(req.body),
+    })
+    .then(() => {
+      res.send("성공");
+    });
+});
+
 app.listen(process.env.PORT || 3000);
